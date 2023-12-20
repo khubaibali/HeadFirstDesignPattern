@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATS", "ATS\ATS.csproj", "{1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{D57E1E0E-76A6-463C-8186-8E66B7DD05AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{7AD34CB4-4A0D-4D5E-819F-EAE8887177FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{7AD34CB4-4A0D-4D5E-819F-EAE8887177FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{E0515241-2EF3-401A-9F1B-25D178E28577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7AD34CB4-4A0D-4D5E-819F-EAE8887177FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD34CB4-4A0D-4D5E-819F-EAE8887177FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD34CB4-4A0D-4D5E-819F-EAE8887177FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0515241-2EF3-401A-9F1B-25D178E28577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0515241-2EF3-401A-9F1B-25D178E28577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0515241-2EF3-401A-9F1B-25D178E28577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0515241-2EF3-401A-9F1B-25D178E28577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
