@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace ATS.Users
 {
-    public abstract class AbsttractUser
+    public abstract class User
     {
-        public AbsttractUser(string Name, string Email, string Password, string UserName)
+        public User(string Name, string Email, string Password, string UserName)
         {
             Name = Name;
             Email = Email;
             Password = Password;
             UserName = UserName;
         }
+        public List<UserRoles> Roles = new();
         public string Name { get;private set; }
         public string Email { get; private set; }
         public string Password { get; private set; }
@@ -23,7 +24,7 @@ namespace ATS.Users
         
     }
 
-    public sealed class LineManager : AbsttractUser 
+    public sealed class LineManager : User 
     {
         public LineManager(string Name,string Email,string Password,string UserName):base(Name,Email,Password,UserName)
         {
@@ -31,21 +32,21 @@ namespace ATS.Users
         }
     }
 
-    public sealed class HrManager : AbsttractUser
+    public sealed class HrManager : User
     {
         public HrManager(string Name, string Email, string Password, string UserName) : base(Name, Email, Password, UserName)
         {
         }
     }
 
-    public sealed class Recruiter : AbsttractUser
+    public sealed class Recruiter : User
     {
         public Recruiter(string Name, string Email, string Password, string UserName) : base(Name, Email, Password, UserName)
         {
         }
     }
 
-    public sealed class Applicant : AbsttractUser
+    public sealed class Applicant : User
     {
         public Applicant(string Name, string Email, string Password, string UserName) : base(Name, Email, Password, UserName)
         {
