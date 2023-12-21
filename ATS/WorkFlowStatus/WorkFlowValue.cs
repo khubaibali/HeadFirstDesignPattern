@@ -1,6 +1,6 @@
 ﻿namespace ATS.WorkFlowStatus;
 
-public class WorkFlowValue
+public sealed class WorkFlowValue
 {
     public readonly string StatusEn;
     public readonly string StatusAr;
