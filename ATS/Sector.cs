@@ -1,8 +1,13 @@
-﻿namespace ATS;
+﻿using ATS.Abstraction;
 
-public class Sector
+namespace ATS;
+
+public class Sector : Entity
 {
-    public Guid Id { get; private set; }
+    public Sector(Guid id) : base(id)
+    {
+    }
+
     public string Name { get; private set; } = null!;
     public IReadOnlyList<Department> Departments { get; private set; }
 }

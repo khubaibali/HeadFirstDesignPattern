@@ -1,7 +1,12 @@
-﻿namespace ATS;
+﻿using ATS.Abstraction;
 
-public class Category
+namespace ATS;
+
+public sealed class Category : Entity
 {
-    public Guid Id { get; private set; }
+    public Category(Guid id) : base(id)
+    {
+    }
+
     public string Name { get; set; } = null!;
 }

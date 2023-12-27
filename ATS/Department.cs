@@ -1,8 +1,12 @@
-﻿namespace ATS;
+﻿using ATS.Abstraction;
 
-public class Department
+namespace ATS;
+
+public sealed class Department : Entity
 {
-    public Guid Id { get; private set; }
+    public Department(Guid id) : base(id)
+    {
+    }
     public string Name { get; set; } = null!;
     
 }

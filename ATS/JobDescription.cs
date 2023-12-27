@@ -1,6 +1,10 @@
-﻿namespace ATS;
+﻿using ATS.Abstraction;
 
-public class JobDescription
+namespace ATS;
+
+public sealed class JobDescription : Entity
 {
-
+    public JobDescription(Guid id) : base(id)
+    {
+    }
 }

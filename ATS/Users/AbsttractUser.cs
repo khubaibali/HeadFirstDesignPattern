@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using ATS.Abstraction;
 namespace ATS.Users
 {
-    public abstract class User
+    public abstract class User : Entity
     {
         public User(string Name, string Email, string Password, string UserName)
         {
@@ -26,7 +21,11 @@ namespace ATS.Users
 
     public sealed class LineManager : User 
     {
-        public LineManager(string Name,string Email,string Password,string UserName):base(Name,Email,Password,UserName)
+        public LineManager(
+            string Name,
+            string Email,
+            string Password,
+            string UserName):base(Name,Email,Password,UserName)
         {
             
         }
@@ -48,7 +47,12 @@ namespace ATS.Users
 
     public sealed class Applicant : User
     {
-        public Applicant(string Name, string Email, string Password, string UserName) : base(Name, Email, Password, UserName)
+        public Guid ProfileId { get; private set; }
+        public Applicant(
+            string Name, 
+            string Email, 
+            string Password, 
+            string UserName) : base(Name, Email, Password, UserName)
         {
         }
     }
